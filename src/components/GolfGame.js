@@ -19,7 +19,7 @@ class GolfGame extends Component {
   }
 
   handleKeyDown(event) {
-    if (event.keycode === 39 && this.state.ballVisible) {
+    if (event.keyCode === 39 && this.state.ballVisible) {
       this.setState((prevState) => ({
         ballPosition: prevState.ballPosition + 5,
       }));
